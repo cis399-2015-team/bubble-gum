@@ -1,0 +1,246 @@
+1. instance: xiz_cs, bubble_gum
+2. double click the instance icon, detailed information then showed blow:
+under "Description" tag:
+Public IP
+52.24.108.25 (xiz_cs)
+52.26.254.144 (bubble_gum)
+
+
+3.
+ubuntu@ip-10-0-7-249:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1      7.8G  780M  6.6G  11% /
+none            4.0K     0  4.0K   0% /sys/fs/cgroup
+udev            492M   12K  492M   1% /dev
+tmpfs           100M  336K   99M   1% /run
+none            5.0M     0  5.0M   0% /run/lock
+none            497M     0  497M   0% /run/shm
+none            100M     0  100M   0% /run/user
+
+4.ubuntu@ip-10-0-7-249:~$ free -t -m
+             total       used       free     shared    buffers     cached
+Mem:           992        252        740          0          8        192
+-/+ buffers/cache:         52        940
+Swap:            0          0          0
+Total:         992        252        740
+
+5.
+ubuntu@ip-10-0-7-249:~$ ps -ae
+  PID TTY          TIME CMD
+    1 ?        00:00:01 init
+    2 ?        00:00:00 kthreadd
+    3 ?        00:00:00 ksoftirqd/0
+    4 ?        00:00:00 kworker/0:0
+    5 ?        00:00:00 kworker/0:0H
+    6 ?        00:00:00 kworker/u30:0
+    7 ?        00:00:00 rcu_sched
+    8 ?        00:00:00 rcuos/0
+    9 ?        00:00:00 rcuos/1
+   10 ?        00:00:00 rcuos/2
+   11 ?        00:00:00 rcuos/3
+   12 ?        00:00:00 rcuos/4
+   13 ?        00:00:00 rcuos/5
+   14 ?        00:00:00 rcuos/6
+   15 ?        00:00:00 rcuos/7
+   16 ?        00:00:00 rcuos/8
+   17 ?        00:00:00 rcuos/9
+   18 ?        00:00:00 rcuos/10
+   19 ?        00:00:00 rcuos/11
+   20 ?        00:00:00 rcuos/12
+   21 ?        00:00:00 rcuos/13
+   22 ?        00:00:00 rcuos/14
+   23 ?        00:00:00 rcu_bh
+   24 ?        00:00:00 rcuob/0
+   25 ?        00:00:00 rcuob/1
+   26 ?        00:00:00 rcuob/2
+   27 ?        00:00:00 rcuob/3
+   28 ?        00:00:00 rcuob/4
+   29 ?        00:00:00 rcuob/5
+   30 ?        00:00:00 rcuob/6
+   31 ?        00:00:00 rcuob/7
+   32 ?        00:00:00 rcuob/8
+   33 ?        00:00:00 rcuob/9
+   34 ?        00:00:00 rcuob/10
+   35 ?        00:00:00 rcuob/11
+   36 ?        00:00:00 rcuob/12
+   37 ?        00:00:00 rcuob/13
+   38 ?        00:00:00 rcuob/14
+   39 ?        00:00:00 migration/0
+   40 ?        00:00:00 watchdog/0
+   41 ?        00:00:00 khelper
+   42 ?        00:00:00 kdevtmpfs
+   43 ?        00:00:00 netns
+   44 ?        00:00:00 xenwatch
+   45 ?        00:00:00 xenbus
+   46 ?        00:00:00 kworker/0:1
+   47 ?        00:00:00 writeback
+   48 ?        00:00:00 kintegrityd
+   49 ?        00:00:00 bioset
+   50 ?        00:00:00 kworker/u31:0
+   51 ?        00:00:00 kblockd
+   52 ?        00:00:00 ata_sff
+   53 ?        00:00:00 khubd
+   54 ?        00:00:00 md
+   55 ?        00:00:00 devfreq_wq
+   57 ?        00:00:00 khungtaskd
+   58 ?        00:00:00 kswapd0
+   59 ?        00:00:00 ksmd
+   60 ?        00:00:00 khugepaged
+   61 ?        00:00:00 fsnotify_mark
+   62 ?        00:00:00 ecryptfs-kthrea
+   63 ?        00:00:00 crypto
+   75 ?        00:00:00 kthrotld
+   76 ?        00:00:00 kworker/u30:1
+   77 ?        00:00:00 khvcd
+   78 ?        00:00:00 scsi_eh_0
+   79 ?        00:00:00 scsi_eh_1
+  100 ?        00:00:00 deferwq
+  101 ?        00:00:00 charger_manager
+  142 ?        00:00:00 kpsmoused
+  202 ?        00:00:00 jbd2/xvda1-8
+  203 ?        00:00:00 ext4-rsv-conver
+  407 ?        00:00:00 upstart-udev-br
+  411 ?        00:00:00 systemd-udevd
+  519 ?        00:00:00 upstart-socket-
+  574 ?        00:00:00 dhclient
+  882 ?        00:00:00 dbus-daemon
+  917 ?        00:00:00 systemd-logind
+  926 ?        00:00:00 rsyslogd
+  934 ?        00:00:00 upstart-file-br
+ 1025 tty4     00:00:00 getty
+ 1028 tty5     00:00:00 getty
+ 1032 tty2     00:00:00 getty
+ 1033 tty3     00:00:00 getty
+ 1035 tty6     00:00:00 getty
+ 1068 ?        00:00:00 sshd
+ 1076 ?        00:00:00 acpid
+ 1077 ?        00:00:00 cron
+ 1078 ?        00:00:00 atd
+ 1162 tty1     00:00:00 getty
+ 1163 ttyS0    00:00:00 getty
+ 1265 ?        00:00:00 kauditd
+ 1385 ?        00:00:00 sshd
+ 1438 ?        00:00:00 sshd
+ 1439 pts/0    00:00:00 bash
+ 1564 ?        00:00:00 sshd
+ 1617 ?        00:00:00 sshd
+ 1618 pts/2    00:00:00 bash
+ 1637 pts/2    00:00:00 ps
+
+6.
+ubuntu@ip-10-0-7-249:~$ ip
+Usage: ip [ OPTIONS ] OBJECT { COMMAND | help }
+       ip [ -force ] -batch filename
+where  OBJECT := { link | addr | addrlabel | route | rule | neigh | ntable |
+                   tunnel | tuntap | maddr | mroute | mrule | monitor | xfrm |
+                   netns | l2tp | tcp_metrics | token }
+       OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
+                    -f[amily] { inet | inet6 | ipx | dnet | bridge | link } |
+                    -4 | -6 | -I | -D | -B | -0 |
+                    -l[oops] { maximum-addr-flush-attempts } |
+                    -o[neline] | -t[imestamp] | -b[atch] [filename] |
+                    -rc[vbuf] [size]}
+
+7.
+ubuntu@ip-10-0-7-249:~$ netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 ip-10-0-7-249.us-we:ssh 128-223-223-224-w:25699 ESTABLISHED
+tcp        0    308 ip-10-0-7-249.us-we:ssh 128-223-223-224-w:25410 ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  6      [ ]         DGRAM                    8876     /dev/log
+unix  2      [ ]         DGRAM                    10776    
+unix  3      [ ]         STREAM     CONNECTED     10247    
+unix  3      [ ]         STREAM     CONNECTED     7937     @/com/ubuntu/upstart
+unix  2      [ ]         DGRAM                    10109    
+unix  3      [ ]         DGRAM                    7493     
+unix  3      [ ]         STREAM     CONNECTED     10253    
+unix  3      [ ]         STREAM     CONNECTED     8767     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     10894    
+unix  3      [ ]         STREAM     CONNECTED     10246    
+unix  3      [ ]         STREAM     CONNECTED     10895    
+unix  3      [ ]         STREAM     CONNECTED     8731     
+unix  3      [ ]         STREAM     CONNECTED     8870     
+unix  3      [ ]         STREAM     CONNECTED     10901    
+unix  2      [ ]         DGRAM                    9081     
+unix  3      [ ]         STREAM     CONNECTED     8790     
+unix  3      [ ]         STREAM     CONNECTED     7453     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     7444     
+unix  3      [ ]         STREAM     CONNECTED     10254    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     8791     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     8774     
+unix  3      [ ]         STREAM     CONNECTED     8871     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     10902    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    10724    
+unix  3      [ ]         STREAM     CONNECTED     8775     
+unix  3      [ ]         STREAM     CONNECTED     7934     
+unix  3      [ ]         DGRAM                    7494
+
+8.
+ubuntu@ip-10-0-7-249:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 0a:f1:dd:4c:d6:3b  
+          inet addr:10.0.7.249  Bcast:10.0.7.255  Mask:255.255.255.0
+          inet6 addr: fe80::8f1:ddff:fe4c:d63b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:9001  Metric:1
+          RX packets:857 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:733 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:106984 (106.9 KB)  TX bytes:121110 (121.1 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+9.
+ubuntu@ip-10-0-7-249:~$ sudo dpkg --get-sellection
+dpkg: error: unknown option --get-sellection
+
+Type dpkg --help for help about installing and deinstalling packages [*];
+Use 'apt' or 'aptitude' for user-friendly package management;
+Type dpkg -Dhelp for a list of dpkg debug flag values;
+Type dpkg --force-help for a list of forcing options;
+Type dpkg-deb --help for help about manipulating *.deb files;
+
+Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
+
+
+10. 
+ubuntu@ip-10-0-7-249:~$ sudo apt-get update
+Ign http://us-west-2.ec2.archive.ubuntu.com trusty InRelease
+Ign http://us-west-2.ec2.archive.ubuntu.com trusty-updates InRelease
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty Release.gpg
+Get:1 http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release.gpg [933 B]
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty Release                     
+Get:2 http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release [63.5 kB] 
+Get:3 http://us-west-2.ec2.archive.ubuntu.com trusty/main Sources [1,064 kB]   
+Get:4 http://us-west-2.ec2.archive.ubuntu.com trusty/universe Sources [6,399 kB]
+Ign http://security.ubuntu.com trusty-security InRelease                       
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main amd64 Packages         
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe amd64 Packages
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main Translation-en
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe Translation-en
+Get:5 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Sources [212 kB]
+Get:6 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Sources [123 kB]
+Get:7 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages [568 kB]
+Get:8 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages [292 kB]
+Get:9 http://security.ubuntu.com trusty-security Release.gpg [933 B]  
+Get:10 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Translation-en [274 kB]
+Get:11 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Translation-en [154 kB]
+Ign http://us-west-2.ec2.archive.ubuntu.com trusty/main Translation-en_US      
+Ign http://us-west-2.ec2.archive.ubuntu.com trusty/universe Translation-en_US
+Get:12 http://security.ubuntu.com trusty-security Release [63.5 kB] 
+Get:13 http://security.ubuntu.com trusty-security/main Sources [87.5 kB]      
+Get:14 http://security.ubuntu.com trusty-security/universe Sources [28.1 kB]  
+Get:15 http://security.ubuntu.com trusty-security/main amd64 Packages [309 kB] 
+Get:16 http://security.ubuntu.com trusty-security/universe amd64 Packages [111 kB]
+Get:17 http://security.ubuntu.com trusty-security/main Translation-en [163 kB] 
+Get:18 http://security.ubuntu.com trusty-security/universe Translation-en [64.0 kB]
+Fetched 9,977 kB in 3s (2,766 kB/s)                                       
+Reading package lists... Done
+
