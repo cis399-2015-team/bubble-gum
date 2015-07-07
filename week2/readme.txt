@@ -13,5 +13,5 @@ Assignment week2
 6.ifconfig
 7.netstat -r
 8.nestat
-9.sudo dpkg --get-selection
+9.sudo dpkg --get-selections
 10.sudo apt-get update

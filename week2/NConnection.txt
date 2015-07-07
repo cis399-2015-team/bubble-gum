@@ -1,0 +1,27 @@
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0     36 ip-10-0-7-186.us-we:ssh ix-trusty.cs.uore:53980 ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  5      [ ]         DGRAM                    8751     /dev/log
+unix  3      [ ]         STREAM     CONNECTED     7440     
+unix  3      [ ]         STREAM     CONNECTED     21633    
+unix  3      [ ]         STREAM     CONNECTED     8637     
+unix  3      [ ]         STREAM     CONNECTED     7951     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     21627    
+unix  2      [ ]         DGRAM                    11078    
+unix  3      [ ]         STREAM     CONNECTED     8640     
+unix  3      [ ]         DGRAM                    7492     
+unix  3      [ ]         STREAM     CONNECTED     8700     
+unix  3      [ ]         STREAM     CONNECTED     8638     
+unix  3      [ ]         DGRAM                    7491     
+unix  2      [ ]         DGRAM                    8925     
+unix  3      [ ]         STREAM     CONNECTED     8604     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     21634    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     8701     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7944     
+unix  2      [ ]         DGRAM                    21489    
+unix  3      [ ]         STREAM     CONNECTED     8641     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7451     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     21626    
+unix  3      [ ]         STREAM     CONNECTED     8561     

@@ -1,30 +1,31 @@
 Ign http://us-west-2.ec2.archive.ubuntu.com trusty InRelease
 Ign http://us-west-2.ec2.archive.ubuntu.com trusty-updates InRelease
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty Release.gpg
-Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release.gpg
+Get:1 http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release.gpg [933 B]
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty Release
-Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release
+Get:2 http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release [63.5 kB]
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main Sources
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe Sources
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main amd64 Packages
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe amd64 Packages
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main Translation-en
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe Translation-en
-Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Sources
-Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Sources
-Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages
-Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages
+Get:3 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Sources [212 kB]
+Get:4 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Sources [124 kB]
+Get:5 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages [568 kB]
+Get:6 http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages [292 kB]
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Translation-en
 Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Translation-en
 Ign http://us-west-2.ec2.archive.ubuntu.com trusty/main Translation-en_US
 Ign http://us-west-2.ec2.archive.ubuntu.com trusty/universe Translation-en_US
 Ign http://security.ubuntu.com trusty-security InRelease
-Hit http://security.ubuntu.com trusty-security Release.gpg
-Hit http://security.ubuntu.com trusty-security Release
-Hit http://security.ubuntu.com trusty-security/main Sources
-Hit http://security.ubuntu.com trusty-security/universe Sources
-Hit http://security.ubuntu.com trusty-security/main amd64 Packages
-Hit http://security.ubuntu.com trusty-security/universe amd64 Packages
+Get:7 http://security.ubuntu.com trusty-security Release.gpg [933 B]
+Get:8 http://security.ubuntu.com trusty-security Release [63.5 kB]
+Get:9 http://security.ubuntu.com trusty-security/main Sources [87.6 kB]
+Get:10 http://security.ubuntu.com trusty-security/universe Sources [28.1 kB]
+Get:11 http://security.ubuntu.com trusty-security/main amd64 Packages [309 kB]
+Get:12 http://security.ubuntu.com trusty-security/universe amd64 Packages [111 kB]
 Hit http://security.ubuntu.com trusty-security/main Translation-en
 Hit http://security.ubuntu.com trusty-security/universe Translation-en
+Fetched 1,860 kB in 2s (856 kB/s)
 Reading package lists...

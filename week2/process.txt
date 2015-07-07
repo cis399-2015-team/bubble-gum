@@ -1,0 +1,97 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Jul06 ?        00:00:01 /sbin/init
+root         2     0  0 Jul06 ?        00:00:00 [kthreadd]
+root         3     2  0 Jul06 ?        00:00:00 [ksoftirqd/0]
+root         5     2  0 Jul06 ?        00:00:00 [kworker/0:0H]
+root         6     2  0 Jul06 ?        00:00:00 [kworker/u30:0]
+root         7     2  0 Jul06 ?        00:00:00 [rcu_sched]
+root         8     2  0 Jul06 ?        00:00:00 [rcuos/0]
+root         9     2  0 Jul06 ?        00:00:00 [rcuos/1]
+root        10     2  0 Jul06 ?        00:00:00 [rcuos/2]
+root        11     2  0 Jul06 ?        00:00:00 [rcuos/3]
+root        12     2  0 Jul06 ?        00:00:00 [rcuos/4]
+root        13     2  0 Jul06 ?        00:00:00 [rcuos/5]
+root        14     2  0 Jul06 ?        00:00:00 [rcuos/6]
+root        15     2  0 Jul06 ?        00:00:00 [rcuos/7]
+root        16     2  0 Jul06 ?        00:00:00 [rcuos/8]
+root        17     2  0 Jul06 ?        00:00:00 [rcuos/9]
+root        18     2  0 Jul06 ?        00:00:00 [rcuos/10]
+root        19     2  0 Jul06 ?        00:00:00 [rcuos/11]
+root        20     2  0 Jul06 ?        00:00:00 [rcuos/12]
+root        21     2  0 Jul06 ?        00:00:00 [rcuos/13]
+root        22     2  0 Jul06 ?        00:00:00 [rcuos/14]
+root        23     2  0 Jul06 ?        00:00:00 [rcu_bh]
+root        24     2  0 Jul06 ?        00:00:00 [rcuob/0]
+root        25     2  0 Jul06 ?        00:00:00 [rcuob/1]
+root        26     2  0 Jul06 ?        00:00:00 [rcuob/2]
+root        27     2  0 Jul06 ?        00:00:00 [rcuob/3]
+root        28     2  0 Jul06 ?        00:00:00 [rcuob/4]
+root        29     2  0 Jul06 ?        00:00:00 [rcuob/5]
+root        30     2  0 Jul06 ?        00:00:00 [rcuob/6]
+root        31     2  0 Jul06 ?        00:00:00 [rcuob/7]
+root        32     2  0 Jul06 ?        00:00:00 [rcuob/8]
+root        33     2  0 Jul06 ?        00:00:00 [rcuob/9]
+root        34     2  0 Jul06 ?        00:00:00 [rcuob/10]
+root        35     2  0 Jul06 ?        00:00:00 [rcuob/11]
+root        36     2  0 Jul06 ?        00:00:00 [rcuob/12]
+root        37     2  0 Jul06 ?        00:00:00 [rcuob/13]
+root        38     2  0 Jul06 ?        00:00:00 [rcuob/14]
+root        39     2  0 Jul06 ?        00:00:00 [migration/0]
+root        40     2  0 Jul06 ?        00:00:00 [watchdog/0]
+root        41     2  0 Jul06 ?        00:00:00 [khelper]
+root        42     2  0 Jul06 ?        00:00:00 [kdevtmpfs]
+root        43     2  0 Jul06 ?        00:00:00 [netns]
+root        44     2  0 Jul06 ?        00:00:00 [xenwatch]
+root        45     2  0 Jul06 ?        00:00:00 [xenbus]
+root        46     2  0 Jul06 ?        00:00:01 [kworker/0:1]
+root        47     2  0 Jul06 ?        00:00:00 [writeback]
+root        48     2  0 Jul06 ?        00:00:00 [kintegrityd]
+root        49     2  0 Jul06 ?        00:00:00 [bioset]
+root        50     2  0 Jul06 ?        00:00:00 [kworker/u31:0]
+root        51     2  0 Jul06 ?        00:00:00 [kblockd]
+root        52     2  0 Jul06 ?        00:00:00 [ata_sff]
+root        53     2  0 Jul06 ?        00:00:00 [khubd]
+root        54     2  0 Jul06 ?        00:00:00 [md]
+root        55     2  0 Jul06 ?        00:00:00 [devfreq_wq]
+root        57     2  0 Jul06 ?        00:00:00 [khungtaskd]
+root        58     2  0 Jul06 ?        00:00:00 [kswapd0]
+root        59     2  0 Jul06 ?        00:00:00 [ksmd]
+root        60     2  0 Jul06 ?        00:00:00 [khugepaged]
+root        61     2  0 Jul06 ?        00:00:00 [fsnotify_mark]
+root        62     2  0 Jul06 ?        00:00:00 [ecryptfs-kthrea]
+root        63     2  0 Jul06 ?        00:00:00 [crypto]
+root        75     2  0 Jul06 ?        00:00:00 [kthrotld]
+root        76     2  0 Jul06 ?        00:00:00 [kworker/u30:1]
+root        77     2  0 Jul06 ?        00:00:00 [khvcd]
+root        78     2  0 Jul06 ?        00:00:00 [scsi_eh_0]
+root        79     2  0 Jul06 ?        00:00:00 [scsi_eh_1]
+root       100     2  0 Jul06 ?        00:00:00 [deferwq]
+root       101     2  0 Jul06 ?        00:00:00 [charger_manager]
+root       142     2  0 Jul06 ?        00:00:00 [kpsmoused]
+root       160     2  0 Jul06 ?        00:00:00 [kworker/0:2]
+root       203     2  0 Jul06 ?        00:00:00 [jbd2/xvda1-8]
+root       204     2  0 Jul06 ?        00:00:00 [ext4-rsv-conver]
+root       407     1  0 Jul06 ?        00:00:00 upstart-udev-bridge --daemon
+root       412     1  0 Jul06 ?        00:00:00 /lib/systemd/systemd-udevd --daemon
+root       544     1  0 Jul06 ?        00:00:00 upstart-socket-bridge --daemon
+root       579     1  0 Jul06 ?        00:00:00 dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0
+message+   894     1  0 Jul06 ?        00:00:00 dbus-daemon --system --fork
+root       909     1  0 Jul06 ?        00:00:00 /lib/systemd/systemd-logind
+root       912     1  0 Jul06 ?        00:00:00 upstart-file-bridge --daemon
+syslog     956     1  0 Jul06 ?        00:00:00 rsyslogd
+root      1018     1  0 Jul06 tty4     00:00:00 /sbin/getty -8 38400 tty4
+root      1021     1  0 Jul06 tty5     00:00:00 /sbin/getty -8 38400 tty5
+root      1025     1  0 Jul06 tty2     00:00:00 /sbin/getty -8 38400 tty2
+root      1026     1  0 Jul06 tty3     00:00:00 /sbin/getty -8 38400 tty3
+root      1028     1  0 Jul06 tty6     00:00:00 /sbin/getty -8 38400 tty6
+root      1060     1  0 Jul06 ?        00:00:00 /usr/sbin/sshd -D
+root      1085     1  0 Jul06 ?        00:00:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root      1086     1  0 Jul06 ?        00:00:00 cron
+daemon    1087     1  0 Jul06 ?        00:00:00 atd
+root      1162     1  0 Jul06 tty1     00:00:00 /sbin/getty -8 38400 tty1
+root      1163     1  0 Jul06 ttyS0    00:00:00 /sbin/getty -8 38400 ttyS0
+root      1265     2  0 Jul06 ?        00:00:00 [kauditd]
+root      4161  1060  0 21:20 ?        00:00:00 sshd: ubuntu [priv] 
+ubuntu    4214  4161  0 21:20 ?        00:00:00 sshd: ubuntu@pts/0  
+ubuntu    4215  4214  0 21:20 pts/0    00:00:00 -bash
+ubuntu    4234  4215  0 21:21 pts/0    00:00:00 ps -ef
