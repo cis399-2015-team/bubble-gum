@@ -5,6 +5,10 @@ Public IP
 52.24.108.25 (xiz_cs)
 52.26.254.144 (bubble_gum)
 
+Private IP:
+ubuntu@ip-10-0-7-249 (xiz_cs)
+ubuntu@ip-10-0-7-211 (bubble_gum)
+
 
 3.
 ubuntu@ip-10-0-7-249:~$ df -h
@@ -243,4 +247,111 @@ Get:17 http://security.ubuntu.com trusty-security/main Translation-en [163 kB]
 Get:18 http://security.ubuntu.com trusty-security/universe Translation-en [64.0 kB]
 Fetched 9,977 kB in 3s (2,766 kB/s)                                       
 Reading package lists... Done
+
+ubuntu@ip-10-0-7-211:~$ ps ax
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Ss     0:01 /sbin/init
+    2 ?        S      0:00 [kthreadd]
+    3 ?        S      0:00 [ksoftirqd/0]
+    5 ?        S<     0:00 [kworker/0:0H]
+    6 ?        S      0:00 [kworker/u30:0]
+    7 ?        S      0:00 [rcu_sched]
+    8 ?        S      0:00 [rcuos/0]
+    9 ?        S      0:00 [rcuos/1]
+   10 ?        S      0:00 [rcuos/2]
+   11 ?        S      0:00 [rcuos/3]
+   12 ?        S      0:00 [rcuos/4]
+   13 ?        S      0:00 [rcuos/5]
+   14 ?        S      0:00 [rcuos/6]
+   15 ?        S      0:00 [rcuos/7]
+   16 ?        S      0:00 [rcuos/8]
+   17 ?        S      0:00 [rcuos/9]
+   18 ?        S      0:00 [rcuos/10]
+   19 ?        S      0:00 [rcuos/11]
+   20 ?        S      0:00 [rcuos/12]
+   21 ?        S      0:00 [rcuos/13]
+   22 ?        S      0:00 [rcuos/14]
+   23 ?        S      0:00 [rcu_bh]
+   24 ?        S      0:00 [rcuob/0]
+   25 ?        S      0:00 [rcuob/1]
+   26 ?        S      0:00 [rcuob/2]
+   27 ?        S      0:00 [rcuob/3]
+   28 ?        S      0:00 [rcuob/4]
+   29 ?        S      0:00 [rcuob/5]
+   30 ?        S      0:00 [rcuob/6]
+   31 ?        S      0:00 [rcuob/7]
+   32 ?        S      0:00 [rcuob/8]
+   33 ?        S      0:00 [rcuob/9]
+   34 ?        S      0:00 [rcuob/10]
+   35 ?        S      0:00 [rcuob/11]
+   36 ?        S      0:00 [rcuob/12]
+   37 ?        S      0:00 [rcuob/13]
+   38 ?        S      0:00 [rcuob/14]
+   39 ?        S      0:00 [migration/0]
+   40 ?        S      0:00 [watchdog/0]
+   41 ?        S<     0:00 [khelper]
+   42 ?        S      0:00 [kdevtmpfs]
+   43 ?        S<     0:00 [netns]
+   44 ?        S      0:00 [xenwatch]
+   45 ?        S      0:00 [xenbus]
+   46 ?        S      0:01 [kworker/0:1]
+   47 ?        S<     0:00 [writeback]
+   48 ?        S<     0:00 [kintegrityd]
+   49 ?        S<     0:00 [bioset]
+   50 ?        S<     0:00 [kworker/u31:0]
+   51 ?        S<     0:00 [kblockd]
+   52 ?        S<     0:00 [ata_sff]
+   53 ?        S      0:00 [khubd]
+   54 ?        S<     0:00 [md]
+   55 ?        S<     0:00 [devfreq_wq]
+   57 ?        S      0:00 [khungtaskd]
+   58 ?        S      0:00 [kswapd0]
+   59 ?        SN     0:00 [ksmd]
+   60 ?        SN     0:00 [khugepaged]
+   61 ?        S      0:00 [fsnotify_mark]
+   62 ?        S      0:00 [ecryptfs-kthrea]
+   63 ?        S<     0:00 [crypto]
+   75 ?        S<     0:00 [kthrotld]
+   76 ?        S      0:00 [kworker/u30:1]
+   77 ?        S      0:00 [khvcd]
+   78 ?        S      0:00 [scsi_eh_0]
+   79 ?        S      0:00 [scsi_eh_1]
+  100 ?        S<     0:00 [deferwq]
+  101 ?        S<     0:00 [charger_manager]
+  142 ?        S<     0:00 [kpsmoused]
+  160 ?        S      0:00 [kworker/0:2]
+  203 ?        S      0:00 [jbd2/xvda1-8]
+  204 ?        S<     0:00 [ext4-rsv-conver]
+  407 ?        S      0:00 upstart-udev-bridge --daemon
+  411 ?        Ss     0:00 /lib/systemd/systemd-udevd --daemon
+  561 ?        S      0:00 upstart-socket-bridge --daemon
+  581 ?        Ss     0:00 dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/li
+  697 ?        S<     0:00 [kworker/u31:1]
+  915 ?        S      0:00 upstart-file-bridge --daemon
+  917 ?        Ssl    0:00 rsyslogd
+  924 ?        Ss     0:00 dbus-daemon --system --fork
+  935 ?        Ss     0:00 /lib/systemd/systemd-logind
+ 1024 tty4     Ss+    0:00 /sbin/getty -8 38400 tty4
+ 1027 tty5     Ss+    0:00 /sbin/getty -8 38400 tty5
+ 1033 tty2     Ss+    0:00 /sbin/getty -8 38400 tty2
+ 1034 tty3     Ss+    0:00 /sbin/getty -8 38400 tty3
+ 1036 tty6     Ss+    0:00 /sbin/getty -8 38400 tty6
+ 1067 ?        Ss     0:00 /usr/sbin/sshd -D
+ 1078 ?        Ss     0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+ 1079 ?        Ss     0:00 cron
+ 1080 ?        Ss     0:00 atd
+ 1163 tty1     Ss+    0:00 /sbin/getty -8 38400 tty1
+ 1164 ttyS0    Ss+    0:00 /sbin/getty -8 38400 ttyS0
+ 1266 ?        S      0:00 [kauditd]
+ 2908 ?        Ss     0:00 sshd: ubuntu [priv] 
+ 2990 ?        S      0:00 sshd: ubuntu@pts/0  
+ 2991 pts/0    Ss     0:00 -bash
+ 3007 pts/0    R+     0:00 ps ax
+
+ubuntu@ip-10-0-7-211:~$ netstat -r
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         ip-10-0-7-1.us- 0.0.0.0         UG        0 0          0 eth0
+10.0.7.0        *               255.255.255.0   U         0 0          0 eth0
+
 
