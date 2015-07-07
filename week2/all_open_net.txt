@@ -1,0 +1,36 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 *:ssh                   *:*                     LISTEN     
+tcp        0     36 ip-10-0-7-153.us-we:ssh ix-trusty.cs.uore:36903 ESTABLISHED
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+udp        0      0 *:bootpc                *:*                                
+udp        0      0 *:7313                  *:*                                
+udp6       0      0 [::]:58467              [::]:*                             
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  5      [ ]         DGRAM                    8719     /dev/log
+unix  2      [ ACC ]     SEQPACKET  LISTENING     7456     /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     6689     @/com/ubuntu/upstart
+unix  2      [ ACC ]     STREAM     LISTENING     8575     /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     8935     /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     8647     /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     22648    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     8646     
+unix  3      [ ]         DGRAM                    7492     
+unix  3      [ ]         STREAM     CONNECTED     8701     /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    10461    
+unix  3      [ ]         DGRAM                    7491     
+unix  3      [ ]         STREAM     CONNECTED     8594     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     7964     
+unix  3      [ ]         STREAM     CONNECTED     7440     
+unix  3      [ ]         STREAM     CONNECTED     8700     
+unix  3      [ ]         STREAM     CONNECTED     22640    
+unix  3      [ ]         STREAM     CONNECTED     22641    
+unix  3      [ ]         STREAM     CONNECTED     7451     @/com/ubuntu/upstart
+unix  3      [ ]         STREAM     CONNECTED     8644     
+unix  3      [ ]         STREAM     CONNECTED     22647    
+unix  3      [ ]         STREAM     CONNECTED     8548     
+unix  3      [ ]         STREAM     CONNECTED     8643     
+unix  2      [ ]         DGRAM                    22503    
+unix  2      [ ]         DGRAM                    8932     
+unix  3      [ ]         STREAM     CONNECTED     7976     @/com/ubuntu/upstart
