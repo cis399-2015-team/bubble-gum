@@ -1,0 +1,33 @@
+1. Remove the sshd package.
+
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-34.us-west-2.compute.internal
+Info: Applying configuration version '1436586193'
+Notice: /Stage[main]/Sshd/Package[openssh-server]/ensure: created
+Notice: Finished catalog run in 2.24 seconds
+
+2. stop sshd
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-34.us-west-2.compute.internal
+Info: Applying configuration version '1436586561'
+Notice: /Stage[main]/Sshd/Service[ssh]/ensure: ensure changed 'running' to 'stopped'
+Notice: Finished catalog run in 0.20 seconds
+
+3.Modify or delete /etc/ssh/sshd_config.
+
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-35.us-west-2.compute.internal
+Info: Applying configuration version '1436586561'
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[yuanfei-pair]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[xiz-pair]/ensure: created
+Notice: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]/ensure: defined content as '{md5}db3706831d16ac32d8665fbfb47dbd99'
+Notice: /Stage[main]/Sshd/Service[ssh]/ensure: ensure changed 'running' to 'stopped'
+Notice: Finished catalog run in 0.23 seconds
+
+4.Modify or delete ~ubuntu/.ssh/authorized_keys
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-35.us-west-2.compute.internal
+Info: Applying configuration version '1436586561'
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[yuanfei-pair]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[xiz-pair]/ensure: created
+Notice: Finished catalog run in 0.12 seconds
