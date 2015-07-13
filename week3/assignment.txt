@@ -1,0 +1,56 @@
+Remove sshd
+
+
+Info: Retrieving plugin
+
+Info: Caching catalog for ip-10-0-7-113.us-west-2.compute.internal
+
+Info: Applying configuration version '1436823671'
+
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[yuanfei-pair]/ensure: created
+
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[xiz-pair]/ensure: created
+
+Info: Creating state file /var/lib/puppet/state/state.yaml
+
+Notice: Finished catalog run in 0.10 seconds
+
+root@ip-10-0-7-113:~# apt-get remove openssh-server
+
+Reading package lists... Done
+
+Building dependency tree       
+
+Reading state information... Done
+
+The following packages will be REMOVED:
+
+  openssh-server
+
+0 upgraded, 0 newly installed, 1 to remove and 91 not upgraded.
+
+After this operation, 951 kB disk space will be freed.
+
+Do you want to continue? [Y/n] y
+
+
+
+(Reading database ... 54676 files and directories currently installed.)
+
+Removing openssh-server (1:6.6p1-2ubuntu2) ...
+
+ssh stop/waiting
+
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+
+root@ip-10-0-7-113:~# puppet agent -t
+
+Info: Retrieving plugin
+
+Info: Caching catalog for ip-10-0-7-113.us-west-2.compute.internal
+
+Info: Applying configuration version '1436823671'
+
+Notice: /Stage[main]/Sshd/Package[openssh-server]/ensure: created
+
+Notice: Finished catalog run in 2.16 seconds
