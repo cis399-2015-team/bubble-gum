@@ -32,7 +32,12 @@ Jul 17 23:22:40 ip-10-0-7-237 postfix/smtp[16334]: connect to hexadecimal.uorego
 Jul 17 23:22:47 ip-10-0-7-237 postfix/smtp[16334]: C4DA3424DF: to=<stevev@hexadecimal.uoregon.edu>, relay=hexadecimal.uoregon.edu[128.223.142.97]:25, delay=6.4, delays=0.01/0/6.1/0.33, dsn=2.0.0, status=sent (250 2.0.0 t6HNMjqo031992 Message accepted for delivery)
 
 
-
+sent to:
+Jul 17 23:39:05 ip-10-0-7-237 postfix/smtpd[18553]: connect from hexadecimal.uoregon.edu[128.223.142.97]
+Jul 17 23:39:05 ip-10-0-7-237 postfix/smtpd[18553]: 77AA7424A2: client=hexadecimal.uoregon.edu[128.223.142.97]
+Jul 17 23:39:05 ip-10-0-7-237 postfix/cleanup[18557]: 77AA7424A2: message-id=<21929.36299.599360.644322@hexadecimal.uoregon.edu>
+Jul 17 23:39:05 ip-10-0-7-237 postfix/qmgr[16314]: 77AA7424A2: from=<stevev@hexadecimal.uoregon.edu>, size=2029, nrcpt=1 (queue active)
+Jul 17 23:39:05 ip-10-0-7-237 postfix/local[18558]: 77AA7424A2: to=<root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>, relay=local, delay=0.05, delays=0.05/0/0/0, dsn=2.0.0, status=sent (delivered to maildir)
 
 3.
 
