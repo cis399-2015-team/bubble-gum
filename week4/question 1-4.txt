@@ -1,0 +1,45 @@
+1.
+
+
+Here is an entire reply:
+
+From root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com  Fri Jul 17 16:22:46 2015
+Return-Path: <root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>
+Received: from ec2-52-25-207-175.us-west-2.compute.amazonaws.com (ec2-52-25-207-175.us-west-2.compute.amazonaws.com [52.25.207.175])
+	by hexadecimal.uoregon.edu (8.14.4/8.14.4/Debian-8) with ESMTP id t6HNMjqo031992
+	for <stevev@hexadecimal.uoregon.edu>; Fri, 17 Jul 2015 16:22:46 -0700
+Received: by ec2-52-25-207-175.us-west-2.compute.amazonaws.com (Postfix, from userid 0)
+	id C4DA3424DF; Fri, 17 Jul 2015 23:22:40 +0000 (UTC)
+Message-ID: <20150717232240.GA16315@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.21 (2010-09-15)
+From: root <root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>
+To: stevev@hexadecimal.uoregon.edu
+Subject: yuanfei xu test file 1st
+Date: Fri, 17 Jul 2015 23:22:40 +0000
+
+frank 1st test
+
+
+2.
+Sent from:
+Jul 17 23:22:40 ip-10-0-7-237 postfix/pickup[16313]: C4DA3424DF: uid=0 from=<root>
+Jul 17 23:22:40 ip-10-0-7-237 postfix/cleanup[16332]: C4DA3424DF: message-id=<20150717232240.GA16315@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>
+Jul 17 23:22:40 ip-10-0-7-237 postfix/qmgr[16314]: C4DA3424DF: from=<root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>, size=561, nrcpt=1 (queue active)
+Jul 17 23:22:40 ip-10-0-7-237 postfix/smtp[16334]: connect to hexadecimal.uoregon.edu[2607:8400:2802:2::80df:8e61]:25: Network is unreachable
+Jul 17 23:22:47 ip-10-0-7-237 postfix/smtp[16334]: C4DA3424DF: to=<stevev@hexadecimal.uoregon.edu>, relay=hexadecimal.uoregon.edu[128.223.142.97]:25, delay=6.4, delays=0.01/0/6.1/0.33, dsn=2.0.0, status=sent (250 2.0.0 t6HNMjqo031992 Message accepted for delivery)
+
+
+
+
+3.
+
+http://ec2-52-25-194-226.us-west-2.compute.amazonaws.com/foo.html
+
+
+4.
+
+184.171.61.248 - - [17/Jul/2015:01:34:04 +0000] "GET /favicon.ico HTTP/1.1" 404 502 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"
+184.171.61.248 - - [17/Jul/2015:01:34:22 +0000] "GET /foo.html HTTP/1.1" 200 523 "http://52.25.194.226/" "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"
