@@ -1,0 +1,3 @@
+when two instances have the service apache2 running, the load balancer provides the web page.
+when one instance has the service apache2 running, the load balancer still provides the web page.
+when all the instances have the service apache2 stopped, the web page will not load which does not provides the web pages.
