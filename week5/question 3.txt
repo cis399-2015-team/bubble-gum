@@ -1,3 +1,17 @@
-when two instances have the service apache2 running, the load balancer provides the web page.
-when one instance has the service apache2 running, the load balancer still provides the web page.
-when all the instances have the service apache2 stopped, the web page will not load which does not provides the web pages.
+10.0.7.175 - - [23/Jul/2015:22:03:34 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
+10.0.7.122 - - [23/Jul/2015:22:03:43 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
+10.0.7.175 - - [23/Jul/2015:22:03:44 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
+184.171.61.248 - - [23/Jul/2015:22:03:48 +0000] "GET / HTTP/1.1" 200 523 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36"
+184.171.61.248 - - [23/Jul/2015:22:03:48 +0000] "GET /favicon.ico HTTP/1.1" 404 502 "http://52.25.194.226/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36"
+10.0.7.122 - - [23/Jul/2015:22:03:53 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
+10.0.7.175 - - [23/Jul/2015:22:03:54 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
+
+
+10.0.7.122 - - [23/Jul/2015:22:04:45 +0000] "GET / HTTP/1.1" 200 523 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36"
+10.0.7.122 - - [23/Jul/2015:22:04:53 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
+
+
+IF I STOP ONE INSTANCE:
+
+::1 - - [23/Jul/2015:22:05:51 +0000] "OPTIONS * HTTP/1.0" 200 125 "-" "Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.11 (internal dummy connection)"
+10.0.7.122 - - [23/Jul/2015:22:05:53 +0000] "GET /index.html HTTP/1.1" 200 575 "-" "ELB-HealthChecker/1.0"
