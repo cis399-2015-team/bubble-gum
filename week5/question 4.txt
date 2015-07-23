@@ -1,6 +1,6 @@
 4.
 
-my httpd modules, "/var/www/html'
+my apache2 modules, add a new file call "/var/www/html' to apache2/web directory  
 
 file { "/var/www/html":
   	ensure  => directory,
