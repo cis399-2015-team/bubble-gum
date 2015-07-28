@@ -1,6 +1,3 @@
-Becuase the mail was sent long time ago, which I can not found it at mail.log ,  
-I just send you a new message.
-
 
 
 Jul 28 02:19:38 ip-10-0-7-237 postfix/qmgr[16314]: 20DB342FAF: from=<root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>, size=553, nrcpt=1 (queue active)
