@@ -1,0 +1,7 @@
+Becuase the mail was sent long time ago, which I can not found it at mail.log ,  
+I just send you a new message.
+
+
+
+Jul 28 02:19:38 ip-10-0-7-237 postfix/qmgr[16314]: 20DB342FAF: from=<root@ec2-52-25-207-175.us-west-2.compute.amazonaws.com>, size=553, nrcpt=1 (queue active)
+Jul 28 02:19:44 ip-10-0-7-237 postfix/smtp[10952]: 20DB342FAF: to=<stevev@hexadecimal.uoregon.edu>, relay=hexadecimal.uoregon.edu[128.223.142.97]:25, delay=6.5, delays=0.01/0/6.1/0.32, dsn=2.0.0, status=sent (250 2.0.0 t6S2JdMO009661 Message accepted for delivery)
