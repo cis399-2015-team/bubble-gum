@@ -15,18 +15,21 @@ My goal is to :
 
 In order to implement these, I need to build more modules on Puppet Master for Apache, PHP and MySQL , and then I can test and verify them by checking each of Agent instances  to make sure that the setup and configuration of these modules are proper.  
 
-I can test if Apache,PHP and MySQL are working correctly by a very simple web application,named index.php. This file will include somethings like connecting to MySQL ,selecting data from a table and displaying the results by PHP. You can access this application by http://localhost/index.php . 
+I can test if Apache,PHP and MySQL are working correctly by a very simple web application,named index.php. This file will include somethings like connecting to MySQL ,selecting data from a table and displaying the results by PHP. You can access this application by http:// 52.26.137.120/index.php . 
 Effect on its user population
 For user, they will use these modules to install these softwares(Apache,PHP,MySQL). Support issues that may arise will be version control of these modules. 
 
 For the monitoring part, the module configurations will help with  the issues  if some package is uninstalled, some files is deleted, and some services is stopped. 
 
 security issues
-For illegal login, SSH key authentication and User groups can provide protection of the machine,  and file permissions may help against access of some files . 
+For Linux login, SSH key authentication and User groups can provide protection of the machine,  and file permissions may help against access of some files . 
 
-For MySQL, I will create several common user account to access the database with some of limited permissions. This will provide the protect of the credentials access to database.
+By Linux firewall, Using iptables can filt some of illegal IP and protocal. I can only allow the fix IP(installed PHP) to access the instance installed with MySQL, so the MySQL will not face to public and it will be more safty.
 
-By the way , as part of the web application, I¡¯ll implement register and login function to control the access to database. When the user opens then main page , her/his will be required to input name and password ,and then I¡¯ll map the user¡¯s name into the common account to access the database.  
+For MySQL, I will create several common user account to access the database with some of limited permissions. By using Grant command of MySQL, I can control the access of database-object by special IP and users. 
+In addition, between PHP and MySQL, I can build up several connections(Sessions) and designate valid IP, Port and username/Password to use database.
+
+As part of the web application, I¡¯ll implement register and login function to control the access to database. When the user opens then main page , her/his will be required to input name and password ,and then I¡¯ll map the user¡¯s name into the common account to access the database.  
 
 If the number of users from network is large than the number of common connections to database, the user¡¯s access request will be halted . These will protect the MySQL server itself from unwanted access on the network.
 
