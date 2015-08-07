@@ -1,34 +1,36 @@
-1. concrete goals for your project, and methods of testing and verification you will apply to determine whether those goals were met
-2. a discussion of your project's effect on its user population, and the user support issues it might raise
-3. a discussion of security issues relevant to your project
-4. a discussion of the work needed to complete the project and what might be needed to maintain it for continued future use, and ways that installation and maintenance tasks can be automated
-5. documentation of the project, both for the system administration work involved and for your user community
 
+The proposal of final project
 
-This project is based on a Apache2 server, a webpage interface writing by php provide functions to store and query data from mysql database. Assign privileges according different user groups and ip addresses.
+Author: Frank Xu
+Date: Aug 5,2015
 
-Goals: Through php, mysql, Apache2 to demonstrate different level of privileges assigned to different users. Distinguish user groups with permission for accessing various table in database, gain access for modifying data, availability to access information from different ip addresses.
+Hypothesis
 
-Methods of testing: 
-Create account through Apache2 server. 
-Setup privileges for accounts (only two accounts for our groups members have administrator access, all others are in user permission).
-Use different groups' account to try to login database, to see if the expected configure are correctly assigned. Use different computer to access website after switching between Apache2 to setup localhost only mode and public mode.
+Suppose I¡¯m a system administrator, I¡¯m managing more than 100+ Machines( Master + Agent Instances ).
 
+Goals
+My goal is to :
+1.use Puppet to setup a uniform application environment for each of Agent instances automatically. The environment include Apache,PHP and MySQL.
+2.Monitor each of Instances .
 
-user group:
-Initially, we decide to setup two different user groups, administrator(only two group members) and all other ordinary users other than administrators. 
+In order to implement these, I need to build more modules on Puppet Master for Apache, PHP and MySQL , and then I can test and verify them by checking each of Agent instances  to make sure that the setup and configuration of these modules are proper.  
 
-security issue:
-While the project would enable users to login in different computers, there could have a potential problem of security. Since the database could be accessed by any users other than the administrator. Apache2 provide ability for security reason that the server could be setup to prevent from listening for incoming connection attempts by doing "$ gksudo "gedit /etc/apache2/ports.conf" " to change "Listen 127.0.0.1:80" so after restart Apache, the server will only serve the home domain, the localhost.
+I can test if Apache,PHP and MySQL are working correctly by a very simple web application,named index.php. This file will include somethings like connecting to MySQL ,selecting data from a table and displaying the results by PHP. You can access this application by http://localhost/index.php . 
+Effect on its user population
+For user, they will use these modules to install these softwares(Apache,PHP,MySQL). Support issues that may arise will be version control of these modules. 
 
+For the monitoring part, the module configurations will help with  the issues  if some package is uninstalled, some files is deleted, and some services is stopped. 
 
-Work needed, future maintain, auto maintenance :
-This project is based on Ubuntu operating system, using Apache2, php5 and MYSQL4.1 or 5.1. All above features need to be setup initially. Make connections with them. Apache2 need to setup configurations. Php coding for webpage. For mysql, new databases need to be created, load in sample data. Then the database user groups should be setup to manage users's privilege for accessing data with corresponding mysql database. The database manage settings include setting up other ip address other than the local host to access database.
-For future maintenance, assume the amount of users increased dramatically, we can create additional user groups to divide access ability elaborately.
+security issues
+For illegal login, SSH key authentication and User groups can provide protection of the machine,  and file permissions may help against access of some files . 
 
+For MySQL, I will create several common user account to access the database with some of limited permissions. This will provide the protect of the credentials access to database.
 
-Documentation, system administration and user community:
-Apache2 could be used to manage different ip accessing, mysql could be used to assign permission for read-only/read-write data in database based on different group of users.
+By the way , as part of the web application, I¡¯ll implement register and login function to control the access to database. When the user opens then main page , her/his will be required to input name and password ,and then I¡¯ll map the user¡¯s name into the common account to access the database.  
 
+If the number of users from network is large than the number of common connections to database, the user¡¯s access request will be halted . These will protect the MySQL server itself from unwanted access on the network.
 
-
+the work needed to complete the project 
+I need to write each of module-script files to complete this project. These modules will consist of Apache ,MySQL and PHP now.  It¡¯s possible to add more in future. I need to maintain version control, configuration files, and others  to the modules according to the  request from the users.
+documentation of the project
+The major work to do this include maintain the Puppet modules. I¡¯ll provide usage guilde to user that includes Q&A and others as needed.
