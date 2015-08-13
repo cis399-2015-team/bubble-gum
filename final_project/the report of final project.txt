@@ -1,0 +1,81 @@
+The report of final project
+
+Author: Frank Xu
+Date: Aug 15,2015
+
+According to the proposal I submitted before, I did following work.
+
+1. 
+I setup a Apache+PHP+MySQL application environment successfully. In order to manage the environment, I used Puppet, I wrote 3 modules for Apache,PHP and MySQL separately. Below is the scripts.
+
+1)
+Init.pp for Apache
+https://github.com/cis399-2015-team/bubble-gum-puppet/blob/master/modules/apache2/manifests/init.pp
+
+2)
+Init.pp for PHP
+https://github.com/cis399-2015-team/bubble-gum-puppet/blob/master/modules/php5/manifest/init.pp
+
+3)
+Init.pp for MySQL
+https://github.com/cis399-2015-team/bubble-gum-puppet/blob/master/modules/mysql/manifest/init.pp
+
+4)
+Site.pp
+https://github.com/cis399-2015-team/bubble-gum-puppet/blob/master/manifests/site.pp
+
+2.
+In order to test the environment that is working properly, I wrote a index.php, and I deployed the file under /var/www/html/. The url of the page  is http://52.25.207.175/index.php. (you can access it). This page is only to query data from MySQL and display them in the page. Following is the result :
+[ paste the display picture]
+
+
+3.
+For security issues, I did following things.
+
+1)
+I used SSH key to allow me and my team member to login in the machine only
+https://github.com/cis399-2015-team/bubble-gum-puppet/blob/master/modules/sshd/manifests/init.pp
+
+2)
+For the Agent instance of installed MySQL, I changed the iptable to allow just one IP(installed PHP) can access it. So MySQL will be safty. Following is what I did:
+
+iptables -A INPUT -s 52.25.207.175 -p tcp -m tcp --dport 3306 -j ACCEPT    
+iptables -A OUTPUT -s 52.25.207.175 -p tcp -m tcp --sport 3306 -j ACCEPT   
+
+
+3)
+I used Grant command of MySQL to allow the common connections(Sessions) have very limited permissions to the database. Following is what I did: 
+
+Create database webdb;
+CREATE USER 'common_user1'@'localhost' IDENTIFIED BY 'pass1';
+CREATE USER 'common_user2'@'localhost' IDENTIFIED BY 'pass2';
+
+grant select, insert, update, delete on webdb.*  to common_user1@'52.25.207.175';
+grant select, insert, update, delete on webdb.*  to common_user2@'52.25.207.175';
+
+4)
+I did not complete the login page because it¡¯s a progromming issue. 
+
+4.
+User¡¯s Guide
+
+1)
+How to add a module in Puppet ?
+a: https://docs.puppetlabs.com/puppet/latest/reference/modules_installing.html
+
+2)
+How to fix 400 error: Cann¡¯t find PHP Class ?
+a: check module file whether function ,files correctlly,and service is started. 
+
+3)
+How to setup iptable?
+a:https://www.digitalocean.com/community/tutorials/how-to-setup-a-basic-ip-tables-configuration-on-centos-6
+
+4)
+How to create a user in MySQL?
+a:https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+5)
+How to grant permissions to user in MySQL ?
+a:https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
